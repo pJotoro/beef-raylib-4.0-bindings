@@ -1,0 +1,55 @@
+FileVersion = 1
+LastConfig = "Debug"
+LastPlatform = "Win64"
+
+[MainWindow]
+X = 0
+Y = 0
+Width = 1178
+Height = 884
+ShowKind = "Maximized"
+
+[MainDockingFrame]
+Type = "DockingFrame"
+SplitType = 2
+
+[[MainDockingFrame.DockedWidgets]]
+Permanent = true
+RequestedWidth = 200.0
+RequestedHeight = 484.0
+SizePriority = 200.0
+Type = "TabbedView"
+
+[[MainDockingFrame.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "Workspace"
+TabWidth = 110.8333
+Type = "ProjectPanel"
+
+[[MainDockingFrame.DockedWidgets]]
+RequestedWidth = 282.0
+RequestedHeight = 158.0
+SizePriority = 200.0
+Type = "TabbedView"
+
+[[MainDockingFrame.DockedWidgets.Tabs]]
+TabLabel = "Call Stack"
+TabWidth = 103.3333
+Type = "CallStackPanel"
+
+[[MainDockingFrame.DockedWidgets.Tabs]]
+TabLabel = "Watch"
+TabWidth = 85.0
+Type = "WatchPanel"
+Columns = [{Width = 240.0}, {Width = 240.0}, {Width = 240.0}]
+
+[[MainDockingFrame.DockedWidgets.Tabs]]
+TabLabel = "Errors"
+TabWidth = 81.66666
+Type = "ErrorsPanel"
+
+[[MainDockingFrame.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "Output"
+TabWidth = 88.33333
+Type = "OutputPanel"
