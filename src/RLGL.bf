@@ -1,9 +1,6 @@
-// NOTE(pJotoro): Obviously this isn't even close to done yet.
-// Also I went with rlgl because any other capitalization style felt odd.
-
 using System;
 
-namespace Raylib.rlgl
+namespace Raylib.rl
 {
 	static
 	{
@@ -63,7 +60,7 @@ namespace Raylib.rlgl
 		public const int32 COMPUTE_SHADER = 0x91B9;
 	}
 
-	enum GlVersion
+	enum Version : int32
 	{
 		OPENGL_11 = 1,
 		OPENGL_21,
@@ -72,7 +69,7 @@ namespace Raylib.rlgl
 		OPENGL_ES_20
 	}
 
-	enum FramebufferAttachType
+	enum FramebufferAttachType : int32
 	{
 		COLOR_CHANNEL0 = 0,
 		COLOR_CHANNEL1,
@@ -86,7 +83,7 @@ namespace Raylib.rlgl
 		STENCIL = 200,
 	}
 
-	enum FramebufferAttachTextureType
+	enum FramebufferAttachTextureType : int32
 	{
 		CUBEMAP_POSITIVE_X = 0,
 		CUBEMAP_NEGATIVE_X,

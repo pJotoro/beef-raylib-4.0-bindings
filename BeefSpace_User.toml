@@ -1,6 +1,7 @@
 FileVersion = 1
 LastConfig = "Debug"
 LastPlatform = "Win64"
+RecentFilesList = ["src\\rlgl.bf", "src\\Raygui.bf", "c:\\Users\\Jonar\\Downloads\\raylib-4.0.0_win64_msvc16\\raylib-4.0.0_win64_msvc16\\include\\raygui.h", "src\\Raylib.bf"]
 
 [MainWindow]
 X = 0
@@ -14,22 +15,79 @@ Type = "DockingFrame"
 SplitType = 2
 
 [[MainDockingFrame.DockedWidgets]]
+RequestedWidth = 200.0
+RequestedHeight = 484.0
+SizePriority = 484.0
+Type = "DockingFrame"
+SplitType = 1
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets]]
 Permanent = true
 RequestedWidth = 200.0
 RequestedHeight = 484.0
-SizePriority = 200.0
 Type = "TabbedView"
 
-[[MainDockingFrame.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
 Active = true
 TabLabel = "Workspace"
 TabWidth = 110.8333
 Type = "ProjectPanel"
 
+[[MainDockingFrame.DockedWidgets.DockedWidgets]]
+IsFillWidget = true
+Permanent = true
+RequestedWidth = 150.0
+RequestedHeight = 150.0
+SizePriority = 1715.6
+DefaultDocumentsTabbedView = true
+Type = "TabbedView"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Raygui.bf"
+TabWidth = 91.66666
+Type = "SourceViewPanel"
+FilePath = "src\\Raygui.bf"
+CursorPos = 499
+VertPos = 5238.0
+ProjectName = "BeefRaylibBindings"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "rlgl.bf"
+TabWidth = 72.5
+Type = "SourceViewPanel"
+FilePath = "src\\rlgl.bf"
+CursorPos = 2897
+VertPos = 1286.309
+ProjectName = "BeefRaylibBindings"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Raylib.bf"
+TabWidth = 88.33333
+Type = "SourceViewPanel"
+FilePath = "src\\Raylib.bf"
+CursorPos = 1743
+ProjectName = "BeefRaylibBindings"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets]]
+IsFillWidget = true
+RequestedWidth = 1715.6
+RequestedHeight = 833.6
+SizePriority = 1715.6
+Type = "TabbedView"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "raygui.h"
+TabWidth = 83.33333
+Type = "SourceViewPanel"
+FilePath = "c:\\Users\\Jonar\\Downloads\\raylib-4.0.0_win64_msvc16\\raylib-4.0.0_win64_msvc16\\include\\raygui.h"
+CursorPos = 17408
+VertPos = 9288.0
+
 [[MainDockingFrame.DockedWidgets]]
 RequestedWidth = 282.0
-RequestedHeight = 158.0
-SizePriority = 200.0
+RequestedHeight = 135.0
 Type = "TabbedView"
 
 [[MainDockingFrame.DockedWidgets.Tabs]]

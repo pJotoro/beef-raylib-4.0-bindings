@@ -1467,7 +1467,7 @@ namespace Raylib
 		        }
 		        else
 		        {
-		            float ratioA = Math.Sin(1 - amount)*halfTheta)/sinHalfTheta;
+		            float ratioA = Math.Sin((1 - amount)*halfTheta)/sinHalfTheta;
 		            float ratioB = Math.Sin(amount*halfTheta)/sinHalfTheta;
 
 		            result.x = (q1.x*ratioA + q2.x*ratioB);

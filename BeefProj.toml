@@ -9,4 +9,4 @@ DefaultNamespace = "Raylib"
 
 [Configs.Debug.Win64]
 CLibType = "Static"
-LibPaths = ["$(ProjectDir)/lib/raylib.lib", "$(ProjectDir)/lib/glfw3.lib", "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/um/x64/Gdi32.lib", "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/um/x64/User32.lib", "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/um/x64/Shell32.lib", "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/ucrt/x64/ucrt.lib", "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/um/x64/WinMM.lib"]
+LibPaths = ["$(ProjectDir)/lib/raylib.lib"]
