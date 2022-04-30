@@ -38,13 +38,13 @@ IsFillWidget = true
 Permanent = true
 RequestedWidth = 150.0
 RequestedHeight = 150.0
-SizePriority = 1715.6
+SizePriority = 0.4557625
 DefaultDocumentsTabbedView = true
 Type = "TabbedView"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Raygui.bf"
-TabWidth = 91.66666
+TabWidth = 81.66666
 Type = "SourceViewPanel"
 FilePath = "src\\Raygui.bf"
 CursorPos = 499
@@ -54,16 +54,16 @@ ProjectName = "BeefRaylibBindings"
 [[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
 Active = true
 TabLabel = "rlgl.bf"
-TabWidth = 72.5
+TabWidth = 62.5
 Type = "SourceViewPanel"
 FilePath = "src\\rlgl.bf"
 CursorPos = 2897
-VertPos = 1286.309
+VertPos = 1258.4
 ProjectName = "BeefRaylibBindings"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Raylib.bf"
-TabWidth = 88.33333
+TabWidth = 78.33333
 Type = "SourceViewPanel"
 FilePath = "src\\Raylib.bf"
 CursorPos = 1743
@@ -73,13 +73,13 @@ ProjectName = "BeefRaylibBindings"
 IsFillWidget = true
 RequestedWidth = 1715.6
 RequestedHeight = 833.6
-SizePriority = 1715.6
+SizePriority = 0.5442375
 Type = "TabbedView"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
 Active = true
 TabLabel = "raygui.h"
-TabWidth = 83.33333
+TabWidth = 73.33333
 Type = "SourceViewPanel"
 FilePath = "c:\\Users\\Jonar\\Downloads\\raylib-4.0.0_win64_msvc16\\raylib-4.0.0_win64_msvc16\\include\\raygui.h"
 CursorPos = 17408
