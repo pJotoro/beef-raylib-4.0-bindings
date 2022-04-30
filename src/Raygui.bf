@@ -1,3 +1,5 @@
+// NOTE(pJotoro): Bindings fo raygui do not work at all right now because raylib.lib does not contain raygui.
+
 using System;
 
 namespace Raylib.Gui
@@ -139,7 +141,7 @@ namespace Raylib.Gui
 
 	// Spinner
 	enum SpinnerProperty : int32
-		 {
+	{
 	    SPIN_BUTTON_WIDTH = 16,
 	    SPIN_BUTTON_PADDING,
 	}

@@ -446,7 +446,7 @@ namespace Raylib
 		}
 
 		// Rotate vector by angle
-		public static Vector2 Vector2Rotate(Vector2 v, float angle)
+		public static Vector2 Rotate(Vector2 v, float angle)
 		{
 		    Vector2 result = Vector2.Zero;
 
@@ -457,7 +457,7 @@ namespace Raylib
 		}
 
 		// Move Vector towards target
-		public static Vector2 Vector2MoveTowards(Vector2 v, Vector2 target, float maxDistance)
+		public static Vector2 MoveTowards(Vector2 v, Vector2 target, float maxDistance)
 		{
 		    Vector2 result = Vector2.Zero;
 
@@ -2607,6 +2607,22 @@ namespace Raylib
 		public float y;
 		public float width;
 		public float height;
+
+		public this()
+		{
+			x = 0;
+			y = 0;
+			width = 0;
+			height = 0;
+		}
+
+		public this(float _x, float _y, float _width, float _height)
+		{
+			x = _x;
+			y = _y;
+			width = _width;
+			height = _height;
+		}
 	}
 
 	[CRepr]
@@ -3459,7 +3475,7 @@ namespace Raylib
 		[CLink]
 		public static extern void TakeScreenshot(char8* fileName);                  // Takes a screenshot of current screen (filename extension defines format)
 		[CLink]
-		public static extern void SetConfigFlags(uint32 flags);                    // Setup init configuration flags (view FLAGS)
+		public static extern void SetConfigFlags(ConfigFlags flags);                    // Setup init configuration flags (view FLAGS)
 
 		[CLink]
 		public static extern void TraceLog(int32 logLevel, char8* text, ...);         // Show trace log messages (LOG_DEBUG, LOG_INFO, LOG_WARNING, LOG_ERROR...)
@@ -3545,15 +3561,15 @@ namespace Raylib
 
 		// Input-related functions: keyboard
 		[CLink]
-		public static extern bool IsKeyPressed(int32 key);                             // Check if a key has been pressed once
+		public static extern bool IsKeyPressed(KeyboardKey key);                             // Check if a key has been pressed once
 		[CLink]
-		public static extern bool IsKeyDown(int32 key);                                // Check if a key is being pressed
+		public static extern bool IsKeyDown(KeyboardKey key);                                // Check if a key is being pressed
 		[CLink]
-		public static extern bool IsKeyReleased(int32 key);                            // Check if a key has been released once
+		public static extern bool IsKeyReleased(KeyboardKey key);                            // Check if a key has been released once
 		[CLink]
-		public static extern bool IsKeyUp(int32 key);                                  // Check if a key is NOT being pressed
+		public static extern bool IsKeyUp(KeyboardKey key);                                  // Check if a key is NOT being pressed
 		[CLink]
-		public static extern void SetExitKey(int32 key);                               // Set a custom key to exit program (default is ESC)
+		public static extern void SetExitKey(KeyboardKey key);                               // Set a custom key to exit program (default is ESC)
 		[CLink]
 		public static extern int32 GetKeyPressed();                                // Get key pressed (keycode), call it multiple times for keys queued, returns 0 when the queue is empty
 		[CLink]
@@ -3583,13 +3599,13 @@ namespace Raylib
 
 		// Input-related functions: mouse
 		[CLink]
-		public static extern bool IsMouseButtonPressed(int32 button);                  // Check if a mouse button has been pressed once
+		public static extern bool IsMouseButtonPressed(MouseButton button);                  // Check if a mouse button has been pressed once
 		[CLink]
-		public static extern bool IsMouseButtonDown(int32 button);                     // Check if a mouse button is being pressed
+		public static extern bool IsMouseButtonDown(MouseButton button);                     // Check if a mouse button is being pressed
 		[CLink]
-		public static extern bool IsMouseButtonReleased(int32 button);                 // Check if a mouse button has been released once
+		public static extern bool IsMouseButtonReleased(MouseButton button);                 // Check if a mouse button has been released once
 		[CLink]
-		public static extern bool IsMouseButtonUp(int32 button);                       // Check if a mouse button is NOT being pressed
+		public static extern bool IsMouseButtonUp(MouseButton button);                       // Check if a mouse button is NOT being pressed
 		[CLink]
 		public static extern int32 GetMouseX();                                    // Get mouse position X
 		[CLink]
